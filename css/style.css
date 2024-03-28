@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    color: #000;
+    box-sizing: border-box;/*너비 높이 딱 맞게 설정*/
+    outline: none;
+    font-family: "Noto Sans KR", sans-serif; /*대체폰트*/
+}
+
+html{
+    font-size: 13px;
+}
+
+/* 스타일 초기화 S */
+body{
+    margin: 0; /*여백제거*/
+}
+
+ul,ol,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{ /*순서표시 ● 없애기*/
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    border: 0;
+}
+/* 스타일 초기화 E */
+
+
+/* 공통 스타일 S */
+.montserrat{
+    /*대체폰트*/
+    font-family: "Montserrat", sans-serif;
+
+}
+
+/* 공통 스타일 E */
