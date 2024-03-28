@@ -6,7 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes, minimum-scale=0.5, maximum-scale=3.0">
         <!--css연결-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/common.js"></script>
+
         <title>뉴마커스</title>
     </head>
     <body>
@@ -45,7 +52,50 @@
                 <a href="#">고객센터</a>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <section class="main-banner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/main_banner1.jpg" alt="메인베너1">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/main_banner2.jpg" alt="메인베너2">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/main_banner3.jpg" alt="메인베너3">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/main_banner4.jpg" alt="메인베너4">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </section>
+            <section class="sub-menus">
+                <a href="#">에어간판</a>
+                <a href="#">실사출력</a>
+                <a href="#">현수막&배너</a>
+                <a href="#">인쇄홍보물</a>
+                <a href="#">대량발주건</a>
+                <a href="#">기획상품</a>
+                <a href="#">특가상품</a>
+                <a href="#">마켓</a>
+                <a href="#">개인결제</a>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>
@@ -79,5 +129,28 @@
 -->
 <!--
     이벤트 배너
-    사진 저장, swiper.js -> 스크롤데모들
+    사진 저장, swiper.js -> 스크롤 데모들
+    js폴더 연동
+    swiper navigator코어 들어가서 div 속성들 복붙, swiperjs 소스도 복붙
+    경로에 저장된 배너 넣어주기
+
+    swiper docs get started -> Use Swiper from CDN -> link 태그 복붙
+
+    잘라내고 넣고 잘라내고 넣고....
+    -> 롤링배너 완성 ^.^......
+
+    데모에 swiper pagemation 복붙  --- 이부분 하면 배너 밑에 몇페이지인지 표시해주는거 나옴
+    <div class="swiper-pagination"></div> 이거추가하고
+    
+    pagination: {
+        el: ".swiper-pagination",
+      },이거 js코드에 추가
+
+    css메인 배너 영역 스타일 꽉차게 바꾸기
+
+    메인 배너 부분 sub memus 메뉴 section 추가
+
+    css내부함수 : calc함수 계산에씀 calc(100% / 3) 이렇게 하면 정확하게 3등분 된다.
+    서브메뉴들 영역정해주기
+
 -->
