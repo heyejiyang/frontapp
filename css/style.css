@@ -10,11 +10,15 @@
 
 html{
     font-size: 13px;
+    background: #f8f8f8;
 }
 
 /* 스타일 초기화 S */
 body{
-    margin: 0; /*여백제거*/
+    margin: 0 auto; /*여백제거*/
+    max-width: 720px;/*최대 최소너비*/
+    min-width: 300px;
+    background: #fff;
 }
 
 ul,ol,dl,dt,dd{
@@ -43,3 +47,41 @@ img{
 }
 
 /* 공통 스타일 E */
+
+/* 헤더 영역 S*/
+header .site-top{ /*헤더태그 안에 sitetop요소*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*헤더 태그에서 상하 가운데 정렬*/
+    height: 66px; /*로고 위에 공간 좀 생김*/
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 15px;
+   
+}
+
+header .logo img {/*로고 크기 조절 너비 설정 시 높이 자동*/
+    height: 34px;
+}
+
+header .site-top i{ /*헤더 아이콘 사이즈 조정*/
+    font-size: 2rem;/*1rem = 13px, html 에서 지정해둠*/
+}
+header .site-top .left i{
+    /*오른쪽 외부 여백 주기*/
+    margin-right: 10px;
+}
+header .site-top .right i{
+    margin-left: 10px;
+}
+header nav{
+    display: flex;
+    height: 44px;
+}
+header nav a{
+    flex-grow: 1; /*여백 균등 배분*/
+    width: 0; /*여백만 존재하게 이렇게 해야 정확히 4등분*/
+    text-align: center;/*inline블록일때 가능한 정렬*/
+    line-height: 44px;/*line height 행간격, 높이와 동일하게 맞춰주면 가운데온다.*/
+}
+
+/* 헤더 영역 E */
