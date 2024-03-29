@@ -17,7 +17,7 @@ html{
 body{
     margin: 0 auto; /*여백제거*/
     max-width: 720px;/*최대 최소너비*/
-    min-width: 300px;
+    min-width: 360px;
     background: #fff;
 }
 
@@ -44,6 +44,14 @@ img{
     /*대체폰트*/
     font-family: "Montserrat", sans-serif;
 
+}
+
+h3{
+    font-size: 1.538rem;
+    color: #212121;
+    text-align: center;
+    line-height: 1;
+    padding: 20px;
 }
 
 /* 공통 스타일 E */
@@ -89,6 +97,7 @@ header nav a{
 /* 메인 배너 영역 S*/
 .main-banner img{
     width: 100%;/*화면 꽉차게*/
+    display: block;
 }
 
 
@@ -98,11 +107,118 @@ header nav a{
 .sub-menus{
     display: flex;
     flex-wrap: wrap;
+    border: 10px solid #ededed;
+    border-left: 0;
+    border-right: 0;
 }
 .sub-menus a {
     width: calc(100% / 3);/*너비 3등분*/
     text-align: center;
     height: 50px;
     line-height: 50px;
+    font-size: 1.077rem; 
+    font-weight: 500;
+    border-top: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    
+}
+
+.sub-menus a:nth-of-type(1),
+.sub-menus a:nth-of-type(2),
+.sub-menus a:nth-of-type(3){ /*메뉴 위에 3칸 위쪽 경계선 제거 */
+    border-top: 0;
+}
+.sub-menus a:nth-of-type(3n+1){
+    border-left: 0;
 }
 /* 서브 메뉴 영역 E*/
+
+/* 서브 배너 영역 S*/
+.sub-banner{
+    display: flex;
+    flex-wrap: wrap;/*다음칸 줄 개행*/
+    margin-bottom: 20px;
+}
+
+.sub-banner a:nth-of-type(1){/*첫번째 서브배너*/
+    width: 100%;
+}
+
+.sub-banner a:nth-of-type(2),
+.sub-banner a:nth-of-type(3) {/*2,3번째 서브배너*/
+    width: 50%;
+}
+.sub-banner img{ /*이미지 영역에 꽉채우기*/
+    width: 100%;
+    display: block;
+}
+
+/* 서브 배너 영역 E*/
+
+/* 상품 목록 영역 S */
+.products ul{
+    display: flex;
+    flex-wrap: wrap;/*이렇게만 하면 화면이 커지고 작아지고 하면서 위치가 바뀐다.*/
+    margin: 0 15px;
+
+}
+.products li{
+    width: calc(100% / 2 - 8px ); /*영역 반반 차지하도록 2개씩 한줄에 있게하기 위해*/
+    margin-bottom: 30px;
+}
+
+.products li:nth-of-type(2n){
+    margin-left: 16px;
+}
+
+.products .product-image img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.products .product-image{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.products .product-price{/*단위*/
+    font-size: 1.154rem;
+}
+.products .product-price .price{ /*가격*/
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: -1px;/*글자간격 붙이기*/
+}
+
+.products .product-name{
+    color: #3e3d3c;
+    font-size: 1.154rem;
+    word-break: break-all;
+}
+
+
+.products .stars img{
+    height: 11px;
+}
+.products .no-of-review{
+    color: #a7a7a7;
+    margin-left: 6px;
+    font-size: 0.923rem;
+}
+.products .review-rate{
+    margin: 10px 0 2px;
+}
+
+.products .more-button{
+    font-size: 1.154rem;
+    color: #666;
+    border: 1px solid #b1b1b1;
+    font-weight: bold;
+    background: #fff;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+/* 상품 목록 영역 E */
+
