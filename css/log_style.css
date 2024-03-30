@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    color: #000;
+    box-sizing: border-box;/*너비 높이 딱 맞게 설정*/
+    outline: none;
+    font-family: "Noto Sans KR", sans-serif; /*대체폰트*/
+}
+
+html{
+    font-size: 13px;
+    background: #f8f8f8;
+}
+
+/*스타일 초기화*/
+body{
+    margin: 0 auto;
+    max-width: 720px;/*최대 최소너비*/
+    min-width: 360px;
+    background: #fff;
+}
+
+ul,ol,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{/*목록 점 없애기*/
+  list-style-type: none;  
+}
+a {/*밑줄지우기*/
+    text-decoration: none;
+}
+
+img{
+    border: 0;
+}
+
+/*헤더 부분*/
+
+.head1{
+    padding: 18px 15px 13px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+}
+
+header i { /*headr 안에 i태그 아이콘들 크기 조정*/
+    font-size: 1.92rem;
+}
+
+header .left .xi-bars{
+    margin-right: 10px;
+}
+header .right .xi-cart-o{
+    margin-left: 10px;
+}
+
+header .center-logo img{
+    height: 34px;
+    display: block;
+}
+
+/*두번째 헤더부분*/
+h3{
+    font-size: 1.53rem;
+}
+
+header .page-location{
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    display: flex; 
+    padding: 0 15px;
+}
+
+header .back-icon{
+    align-items: center;
+    display: flex;
+}
+header .login-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 수직 가운데 정렬을 위해 추가 */
+    flex-grow: 1;/* 부모 요소에 맞게 확장되도록 설정 */
+}
+
+/*main 부분*/
+h4{
+    font-size: 1.3rem;
+}
+.login-main{
+    padding: 30px 15px 0;
+}
+
+.login-main div input{
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+/* 메인 체크박스 */
+.login-main .inp_chk input{
+    width: 23px;
+    height: 23px;
+    border: 1px solid #e5e5e5;
+    margin: -3px 5px 0 0;
+}
+
+.inp_chk label{
+    font-size: 0.923rem; 
+    margin-right: 15px;
+}
+.inp_chk {
+    display: flex; /* 아이템을 가로로 정렬하기 위해 플렉스 박스로 설정 */  
+}
+
+/*로그인 버튼*/
+.submit{
+    margin-top: 25px;
+}
+.submit .login-btn{
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    background: #8769f0;
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/*로그인 help*/
+.login-help ul{
+    display: flex;
+    line-height: 1;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.login-help li {
+    font-size: 0.923rem;
+    padding-top: 15px;
+    color: #212121;
+    position: relative;
+}
+.login-help li a {
+    right: 0;
+    top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.login-help li:not(.last):before{
+    width: 1px;
+    height: 11px;
+    display: block;
+    content: '';
+    background-color: #212121;
+    position: absolute;
+}
+
+/*sns 간편 로그인*/
+
+.sns-login{
+    background-color: #ffffff;
+    padding: 30px 15px 45px;
+    margin: 10px 0;
+    border-bottom: 1px solid #8769f0;
+    border-top: 1px solid #8769f0;
+    
+}
+.sns-login .sns-logo{
+    display: flex;
+}
+.sns-login .sns-logo img{
+    width: calc(100% - 10px);
+    max-width: 230px;
+    display: block;
+}
+.sns-login h4{
+    margin-bottom: 20px;
+    margin-top : 0;
+}
