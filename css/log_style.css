@@ -355,10 +355,10 @@ footer li a:not(.no-bar):before{
     background-color: #ffffff;
     height: 30px;
     width: 26px;
-    background-size: 26px;
     border: 0;
     margin-top: 6px;
     padding: 0;
+    cursor: pointer;
 }
 
 .bottom-menu button i {
@@ -379,6 +379,7 @@ footer li a:not(.no-bar):before{
 .bottom-menu a .i1 img{
     margin: 0;
     width: 30px;
+    cursor: pointer;
    
 }
 .bottom-menu .i2{
@@ -398,6 +399,8 @@ footer li a:not(.no-bar):before{
 }
 
 .bottom-menu a .txt {
+    margin-top: 5px;  
+    cursor: pointer;  
     text-align: center;
     font-size: 8px;
     color: #2d2f38;
