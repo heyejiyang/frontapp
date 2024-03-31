@@ -37,6 +37,13 @@ img{
     border: 0;
 }
 
+/* 공통 스타일 S */
+.montserrat{
+    /*대체폰트*/
+    font-family: "Montserrat", sans-serif;
+
+}
+
 /*헤더 부분*/
 
 .head1{
@@ -232,4 +239,166 @@ h4{
     color: #8769f0;
     font-weight: 700;
     cursor: pointer;
+}
+
+/*footer*/
+footer{
+    background-color: #f9f9f9;
+    padding: 25px 0 80px;
+    margin-top: 25px;
+}
+.foot-logo{
+    margin-bottom: 12px;
+
+}
+.foot-logo img{
+    width: 79px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer .center-phone{
+    border: 2px solid #2a2a2a;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    height: 35px;
+    line-height: 31px;
+    font-size: 1.538rem;
+    color: #2a2a2a;
+    font-weight: 800;
+    width: 190px;
+    margin: 0 auto 7px;
+}
+footer .center-phone img{
+    height: 16px;
+    vertical-align: middle;
+}
+
+footer .bank-info{
+    text-align: center;
+    font-size: 0.923rem;
+    color: #2a2a2a;
+}
+footer .bank-info span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer .business-info{
+    margin: 3px 0 8px;
+    color: #878787;
+    font-size: 0.923rem;
+    font-weight: 600;
+    text-align: center;
+}
+.business-info img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+footer .links ul{
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+footer .links li{
+    position: relative;
+}
+footer .links a{
+    font-size: 0.846rem;
+    color: #878787;
+    padding: 0 11px;
+}
+footer li a:not(.no-bar):before{
+    top: 2px;
+    width: 1px;
+    height: 11px;
+    display: block;
+    content: '';
+    background-color: #878787;
+    position: absolute;
+}
+
+
+/*사이드 메뉴*/
+.side-menu{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 10;
+}
+
+.side-menu img{
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*하단바*/
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    border-top: 1px solid #dfe1e5;
+    width: 100%;
+    height: 60px;
+    padding: 9px 0;
+    justify-content: space-around;
+}
+
+.bottom-menu button {
+    background-color: #ffffff;
+    height: 30px;
+    width: 26px;
+    background-size: 26px;
+    border: 0;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.bottom-menu button i {
+    cursor: pointer;
+    background-color: #ffffff;
+    outline: none;
+    height: 30px;
+    width: 26px;
+    font-size: 3rem;
+}
+
+.bottom-menu a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-menu a .i1 img{
+    margin: 0;
+    width: 30px;
+   
+}
+.bottom-menu .i2{
+    margin: 0;
+    width: 42px;
+   
+}
+.bottom-menu a .i3{
+    margin: 0;
+    width: 42px;
+   
+}
+.bottom-menu a .i4{
+    margin: 0;
+    width: 22px;
+    
+}
+
+.bottom-menu a .txt {
+    text-align: center;
+    font-size: 8px;
+    color: #2d2f38;
 }
